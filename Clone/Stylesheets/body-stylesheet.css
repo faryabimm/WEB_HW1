@@ -1,0 +1,23 @@
+html, body {
+    background-color: #ECEFF1;
+}
+
+#loadingElement {
+    animation: preloadAnimation 1s cubic-bezier(0, 0, 0.3, 1) 0.5s;
+    animation-fill-mode: forwards;
+    display: block;
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes preloadAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

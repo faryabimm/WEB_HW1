@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.firebase_topbar{
+    height: 48px;
+    width: 100%;
+    background-color: #0288D1;
+}
+
+
+.firebase_left_nav{
+    width: 256px;
+    height: 100%;
+    border: 1px solid black;
+    position: fixed;
+}

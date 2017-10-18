@@ -1,17 +1,65 @@
 body {
     margin: 0;
+    position: relative;
 }
 
 .firebase_topbar{
     height: 48px;
     width: 100%;
     background-color: #0288D1;
+    position: relative;
+}
+
+.firebase_body {
+    position: relative;
+
+}
+
+.firebase_dash {
+    position: relative;
+
+}
+
+.firebase_dash .overview_bar {
+    height:56px;
+    width: 100%;
+    background-color: #039BE5;
+    position: inherit;
 }
 
 
 .firebase_left_nav{
     width: 256px;
     height: 100%;
-    border: 1px solid black;
-    position: fixed;
+    position: relative;
+    border-right: 3px solid black;
+    border-left-width: 0;
+    -webkit-border-image:
+            -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
 }
+
+.firebase_left_nav .left_nav_header {
+    width: 100%;
+    height: 56px;
+    background-color: #FAFAFA;
+    border: 1px none #DCDCDC;
+    border-bottom-style: solid;
+}
+
+.firebase_left_nav .left_nav_footer {
+    width: 100%;
+    height: 104px;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.firebase_left_nav .left_nav_footer .spark {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.firebase_left_nav .left_nav_footer .sidebar_collapse {
+    width: 100%;
+    height: 44px;
+}
+

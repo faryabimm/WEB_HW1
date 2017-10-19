@@ -28,6 +28,16 @@ body {
 }
 
 
+.firebase_topbar .logo {
+    margin-left: 20px;
+}
+
+.firebase_topbar .logo img {
+    width: 28px;
+    height: 28px;
+}
+
+
 .firebase_left_nav{
     width: 256px;
     border-right: 3px solid black;

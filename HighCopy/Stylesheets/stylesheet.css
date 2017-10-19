@@ -1,22 +1,62 @@
 body {
     margin: 0;
-    position: relative;
+    padding: 0;
 }
 
-.firebase_topbar{
-    height: 48px;
-    width: 100%;
-    background-color: #0288D1;
+.flex-col-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
     position: relative;
+
 }
+
+.flex-row-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+
+.firebase_topbar {
+    background-color: #0288D1;
+    width: 100%;
+    height: 48px;
+}
+
+
+.firebase_left_nav{
+    width: 256px;
+    border-right: 3px solid black;
+
+    min-height: 400px;  /*TODO SHOULD BE REMOVED*/
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*top: 48px;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    border-left-width: 0;
+    -webkit-border-image:
+            -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
+}
+
 
 .firebase_body {
-    position: relative;
-
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFA;
+    min-height: 500px; /*TODO DELETE*/
 }
 
+
+
 .firebase_dash {
-    position: relative;
+    background-color: #FAFAFA;
+    min-height: 400px; /*TODO DELETE*/
+    width: 100%;
 
 }
 
@@ -24,19 +64,10 @@ body {
     height:56px;
     width: 100%;
     background-color: #039BE5;
-    position: inherit;
 }
 
 
-.firebase_left_nav{
-    width: 256px;
-    height: 100%;
-    position: relative;
-    border-right: 3px solid black;
-    border-left-width: 0;
-    -webkit-border-image:
-            -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
-}
+
 
 .firebase_left_nav .left_nav_header {
     width: 100%;
@@ -51,6 +82,8 @@ body {
     height: 104px;
     border-top: 1px solid #DCDCDC;
     border-bottom: 1px solid #DCDCDC;
+    bottom: 0;
+
 }
 
 .firebase_left_nav .left_nav_footer .spark {
@@ -62,4 +95,3 @@ body {
     width: 100%;
     height: 44px;
 }
-

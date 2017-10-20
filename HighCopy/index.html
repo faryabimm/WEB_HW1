@@ -16,12 +16,22 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+
+    function Function2() {
+        var x = document.getElementById("Demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+
+    }
 </script>
 <body>
 
-<div class="flex-col-container">
+<div class="flex-col-container" >
     <div class="firebase_topbar">
-        <div class="flex-row-container">
+        <!--<div class="flex-row-container topbar_row_container">-->
             <button class="firebase_topbar_topleft_logo">
                 <div class="flex-row-container">
                     <img class="logo_picture" src="Images/firebase_logo.png">
@@ -45,7 +55,13 @@
                 </div>
             </div>
 
-        </div>
+            <div class="second_right_buttons">
+                <button class="first_dropdown_button"><h1 class="first_dropdown_button_name">Go to docs</h1></button>
+                <button class="first_dropdown_button"><h1 class="first_dropdown_button_name">three</h1></button>
+                <button class="first_dropdown_button"><h1 class="first_dropdown_button_name">image</h1></button>
+            </div>
+
+        <!--</div>-->
 
     </div>
 

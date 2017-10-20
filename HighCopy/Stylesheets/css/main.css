@@ -7,6 +7,7 @@ body {
 
 html {
     height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .flex-col-container {
@@ -74,7 +75,6 @@ html {
 .logo_name {
     padding: 0px;
     margin-top: 12px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
     font-size: 21px;
     margin-left: 9px;
     color: white;
@@ -106,7 +106,6 @@ html {
     overflow-x: hidden;
     overflow-y: auto;
 
-    min-height: 400px; /*TODO SHOULD BE REMOVED*/
     border-right: 3px solid black;
     border-left-width: 0;
     -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
@@ -118,13 +117,11 @@ html {
     width: 100%;
     height: auto;
     background-color: #FAFAFA;
-    min-height: 500px; /*TODO DELETE*/
     z-index: -2;
 }
 
 .firebase_dash {
     background-color: #FAFAFA;
-    min-height: 800px; /*TODO DELETE*/
     width: 100%;
     z-index: -2;
 
@@ -136,6 +133,11 @@ html {
     background-color: #039BE5;
     z-index: -1;
 
+}
+
+.firebase_left_nav #scrollable {
+    overflow-y: scroll;
+    height: 519px;
 }
 
 .firebase_left_nav .left_nav_header {
@@ -166,24 +168,42 @@ html {
 
 .firebase_left_nav .left_nav_footer .spark {
     width: 100%;
-    height: 60px;
+    height: 48px;
     border-bottom: 1px solid #DCDCDC;
+    padding: 12px 24px 0 24px;
+}
+
+.firebase_left_nav .left_nav_footer .spark .top_label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.firebase_left_nav .left_nav_footer .spark .bottom_label {
+    font-size: 12px;
+}
+
+.firebase_left_nav .left_nav_footer .spark .upgrade_button {
+    font-size: 13px;
+    font-weight: 500;
+    color: #039BE5;
+    background-color: inherit;
+    text-transform: uppercase;
+
+    padding: 8px 12px 8px 12px;
+    margin-left: 58px;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.firebase_left_nav .left_nav_footer .spark .upgrade_button:hover {
+    background-color: #E0F3FC;
 }
 
 .firebase_left_nav .left_nav_footer .sidebar_collapse {
     width: 100%;
-    height: 44px;
-
-    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 0px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    max-height: 256px;
-    transform: translate(0px, 0px);
-    visibility: visible;
+    height: 40px;
+    font-size: 24px;
+    padding: 4px 16px 0 210px;
 }
 
 .firebase_left_nav .navbar_item {
@@ -191,10 +211,9 @@ html {
     width: auto;
     background-color: inherit;
     color: inherit;
-    padding: 0 24px 0 24px;
+    padding: 2px 24px 0 24px;
     font-size: 14px;
     font-weight: 500;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
     vertical-align: middle;
 
 }
@@ -216,6 +235,24 @@ html {
 .firebase_left_nav .navbar_item:hover {
     background-color: #EEEEEE;
 
+}
+
+.firebase_left_nav .left_nav_header .navbar_item {
+    /*margin-right: 1px;*/
+    border-right: 1px solid #DCDCDC;
+    width: 160px;
+
+}
+
+.firebase_left_nav .left_nav_header #settings {
+    width: 20px;
+    height: 20px;
+    padding: 3px 8px 0 13px;
+    border-right: none;
+    vertical-align: middle;
+    horiz-align: center;
+    color: #737373;
+    background-color: inherit;
 }
 
 .firebase_left_nav .navbar_label {

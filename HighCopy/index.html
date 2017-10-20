@@ -5,7 +5,7 @@
     <title>Firebase</title>
     <link rel="stylesheet" type="text/css" href="Stylesheets/css/main.css">
     <link rel="stylesheet" type="text/css" href="Stylesheets/w3.css">
-    <link href="Stylesheets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="Stylesheets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -31,10 +31,16 @@
             <div class="firebase_left_nav">
                 <div id="scrollable">
                     <div class="left_nav_header">
-                        <div class="navbar_item">
-                            <i class="mdi mdi-home"></i>
-                            <span>Overview</span>
+                        <div class="flex-row-container">
+                            <div class="navbar_item">
+                                <i class="mdi mdi-home"></i>
+                                <span>Overview</span>
+                            </div>
+                            <div class="navbar_item" id="settings">
+                                <i class="material-icons">settings</i>
+                            </div>
                         </div>
+
                     </div>
 
                     <div class="navbar_item">
@@ -109,10 +115,23 @@
                 </div>
                 <div class="left_nav_footer">
                     <div class="spark">
+                        <div class="flex-row-container">
+                            <div class="flex-col-container">
+                                <div class="top_label">
+                                    Spark
+                                </div>
+                                <div class="bottom_label">
+                                    Free $0/month
+                                </div>
+                            </div>
+                            <div class="upgrade_button">
+                                upgrade
+                            </div>
+                        </div>
 
                     </div>
                     <div class="sidebar_collapse">
-
+                        <i class="mdi mdi-chevron-left"></i>
                     </div>
                 </div>
 

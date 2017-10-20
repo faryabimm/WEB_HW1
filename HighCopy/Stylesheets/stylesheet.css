@@ -4,7 +4,8 @@ body {
     min-height: 100%;
     /*width: 100%;*/
 }
-html{
+
+html {
     height: 100%;
 }
 
@@ -26,7 +27,6 @@ html{
     flex-direction: row;
 }
 
-
 .firebase_topbar {
     background-color: #0288D1;
     width: 100%;
@@ -35,28 +35,27 @@ html{
     /*border-width: 0 0 3px 0;*/
     /*border-style: solid;*/
     /*-webkit-border-image:*/
-            /*-webkit-gradient(linear, 0 0, 0 100%, from(#0288D1), to(rgba(0, 0, 0, 0))) 1 100%;*/
+    /*-webkit-gradient(linear, 0 0, 0 100%, from(#0288D1), to(rgba(0, 0, 0, 0))) 1 100%;*/
     /*-webkit-border-image:*/
-            /*-webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;*/
+    /*-webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;*/
     /*-moz-border-image:*/
-            /*-moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;*/
+    /*-moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;*/
     /*-o-border-image:*/
-            /*-o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;*/
+    /*-o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;*/
     /*border-image:*/
-            /*linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;*/
-
+    /*linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;*/
 
 }
 
-.firebase_topbar_bottom_shadow{
+.firebase_topbar_bottom_shadow {
     /*background-color: black;*/
     height: 5px;
-    background: linear-gradient(to bottom,#03699b,#039be5);
+    background: linear-gradient(to bottom, #03699b, #039be5);
 }
 
-.firebase_topbar_bottom_shadow_for_nav{
+.firebase_topbar_bottom_shadow_for_nav {
     height: 5px;
-    background: linear-gradient(to bottom,#b6b6b6,#fafafa);
+    background: linear-gradient(to bottom, #b6b6b6, #fafafa);
 }
 
 .firebase_topbar .logo {
@@ -68,11 +67,10 @@ html{
     height: 28px;
 }
 
-
-.firebase_left_nav{
+.firebase_left_nav {
     width: 253px;
 
-    min-height: 400px;  /*TODO SHOULD BE REMOVED*/
+    min-height: 400px; /*TODO SHOULD BE REMOVED*/
     /*position: absolute;*/
     /*display: inline-block;*/
     /*top: 48px;*/
@@ -80,10 +78,8 @@ html{
     /*left: 0;*/
     border-right: 3px solid black;
     border-left-width: 0;
-    -webkit-border-image:
-            -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
 }
-
 
 .firebase_body {
     top: -12px;
@@ -95,8 +91,6 @@ html{
     z-index: -2;
 }
 
-
-
 .firebase_dash {
     background-color: #FAFAFA;
     min-height: 400px; /*TODO DELETE*/
@@ -106,14 +100,11 @@ html{
 }
 
 .firebase_dash .overview_bar {
-    height:51px;
+    height: 51px;
     width: 100%;
     background-color: #039BE5;
     z-index: -1;
 }
-
-
-
 
 .firebase_left_nav .left_nav_header {
     width: 100%;
@@ -125,7 +116,7 @@ html{
     /*border-right: 3px solid black;*/
     /*border-left-width: 0;*/
     /*-webkit-border-image:*/
-            /*-webkit-gradient(linear, 0 0, 100% 0, from(#0187c8), to(#039be5)) 1 100%;*/
+    /*-webkit-gradient(linear, 0 0, 100% 0, from(#0187c8), to(#039be5)) 1 100%;*/
 }
 
 .firebase_left_nav .left_nav_footer {
@@ -142,7 +133,49 @@ html{
     height: 60px;
     border-bottom: 1px solid #DCDCDC;
 }
+
 .firebase_left_nav .left_nav_footer .sidebar_collapse {
     width: 100%;
     height: 44px;
+}
+
+.firebase_left_nav .navbar_item {
+    height: 32px;
+    width: auto;
+    background-color: #FFFFFF;
+    color: #757575;
+    padding: 16px 24px 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    vertical-align: middle;
+
+}
+
+.firebase_left_nav .navbar_item span {
+    padding-left: 16px;
+}
+.firebase_left_nav .navbar_item i {
+    width: 20px;
+    height: 20px;
+
+    font-family: "GMP Icons";
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+.firebase_left_nav .navbar_item:hover {
+    background-color: #EEEEEE;
+
+}
+
+.firebase_left_nav .navbar_label {
+    height: 24px;
+    width: auto;
+    color: #9E9E9E;
+    background-color: #FFFFFF;
+    padding: 8px 24px 0 24px;
+    font-size: 12px;
+    text-transform: uppercase;
 }

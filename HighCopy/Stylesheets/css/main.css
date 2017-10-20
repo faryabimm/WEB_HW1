@@ -58,8 +58,7 @@ html {
     background: linear-gradient(to bottom, #b6b6b6, #fafafa);
 }
 
-
-.firebase_topbar_topleft_logo{
+.firebase_topbar_topleft_logo {
     width: 142px;
     height: 48px;
 
@@ -71,8 +70,6 @@ html {
     outline: none;
 
 }
-
-
 
 .logo_name {
     padding: 0px;
@@ -88,27 +85,28 @@ html {
     font-weight: normal;
 
 }
+
 .logo_picture {
     width: 28px;
     height: 28px;
     margin-left: 14px;
     margin-top: 8px;
-    top:-1px;
+    top: -1px;
     text-align: center;
 
 }
 
-
-
 .firebase_left_nav {
     width: 253px;
+    color: #757575;
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+    /*bottom: 0px;*/
+    overflow-x: hidden;
+    overflow-y: auto;
 
     min-height: 400px; /*TODO SHOULD BE REMOVED*/
-    /*position: absolute;*/
-    /*display: inline-block;*/
-    /*top: 48px;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
     border-right: 3px solid black;
     border-left-width: 0;
     -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(#DCDCDC), to(rgba(0, 0, 0, 0))) 1 100%;
@@ -126,7 +124,7 @@ html {
 
 .firebase_dash {
     background-color: #FAFAFA;
-    min-height: 400px; /*TODO DELETE*/
+    min-height: 800px; /*TODO DELETE*/
     width: 100%;
     z-index: -2;
 
@@ -137,14 +135,19 @@ html {
     width: 100%;
     background-color: #039BE5;
     z-index: -1;
+
 }
 
 .firebase_left_nav .left_nav_header {
     width: 100%;
-    height: 51px;
+    height: 41px;
     background-color: #FAFAFA;
+    color: #039BE5;
     border: 1px none #DCDCDC;
     border-bottom-style: solid;
+    padding-top: 10px;
+    margin-bottom: 12px;
+    vertical-align: middle;
 
     /*border-right: 3px solid black;*/
     /*border-left-width: 0;*/
@@ -170,14 +173,25 @@ html {
 .firebase_left_nav .left_nav_footer .sidebar_collapse {
     width: 100%;
     height: 44px;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 0px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 256px;
+    transform: translate(0px, 0px);
+    visibility: visible;
 }
 
 .firebase_left_nav .navbar_item {
-    height: 32px;
+    height: 36px;
     width: auto;
-    background-color: #FFFFFF;
-    color: #757575;
-    padding: 16px 24px 8px 24px;
+    background-color: inherit;
+    color: inherit;
+    padding: 0 24px 0 24px;
     font-size: 14px;
     font-weight: 500;
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -188,6 +202,7 @@ html {
 .firebase_left_nav .navbar_item span {
     padding-left: 16px;
 }
+
 .firebase_left_nav .navbar_item i {
     width: 20px;
     height: 20px;
@@ -213,14 +228,11 @@ html {
     text-transform: uppercase;
 }
 
-
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
     src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
-
-
     src: local('Material Icons'),
     local('MaterialIcons-Regular'),
     url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
@@ -233,7 +245,7 @@ html {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px; /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;

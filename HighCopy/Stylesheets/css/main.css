@@ -59,6 +59,16 @@ html {
     background: linear-gradient(to bottom, #b6b6b6, #fafafa);
 }
 
+.user_image{
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+.three_points{
+    margin-top: 11px;
+    margin-right: 2px;
+}
 .firebase_topbar_topleft_logo {
     width: 142px;
     height: 48px;
@@ -137,6 +147,17 @@ html {
 
 
 
+}
+.Go_to_docs{
+    margin-right: -1px;
+    margin-top: 4px;
+    height: 10px;
+    font-stretch: condensed;
+    letter-spacing: 0.02px;
+    font-size: 13.5px;
+    font-stretch: condensed;
+    font-weight: bold;
+    transform: scale(0.95,1.1);
 }
 .first_dropdown_button_name{
     margin-top: 0px;

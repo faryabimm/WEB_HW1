@@ -171,6 +171,18 @@ html {
     transform: scale(1,1.1);
 
 }
+.Overview_word{
+    color: white;
+    margin-top: 7px;
+    margin-left: 25px;
+    height: 10px;
+    font-stretch: condensed;
+    letter-spacing: 0.02px;
+    font-size: 19px;
+
+    font-weight: normal;
+    transform: scale(1,1.1);
+}
 
 .arrow_down{
     margin-top: 4.5px;
@@ -215,7 +227,7 @@ html {
 }
 
 .firebase_left_nav {
-    width: 253px;
+    width: 256px;
     color: #757575;
     /*position: absolute;*/
     /*left: 0px;*/

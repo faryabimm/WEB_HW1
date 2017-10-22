@@ -20,37 +20,40 @@
 </script>
 <body>
 
-<div class="flex-col-container" >
+<div class="flex-col-container">
     <div class="firebase_topbar">
         <!--<div class="flex-row-container topbar_row_container">-->
-            <button class="firebase_topbar_topleft_logo">
-                <div class="flex-row-container">
-                    <img class="logo_picture" src="Images/firebase_logo.png">
-                    <h1 class="logo_name">Firebase</h1>
-                </div>
+        <button class="firebase_topbar_topleft_logo">
+            <div class="flex-row-container">
+                <img class="logo_picture" src="Images/firebase_logo.png">
+                <h1 class="logo_name">Firebase</h1>
+            </div>
+        </button>
+
+        <div class="first_dropdown">
+            <button onclick="myFunction()" class="first_dropdown_button">
+                <div class="flex-row-container"><h1 class="first_dropdown_button_name">first</h1>
+                    <h1 class="arrow_down">&#9660</h1></div>
             </button>
-
-            <div class="first_dropdown">
-                <button onclick="myFunction()" class="first_dropdown_button"><div class="flex-row-container"><h1 class="first_dropdown_button_name">first</h1><h1 class="arrow_down">&#9660</h1></div></button>
-                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                    <div class="w3-bar-item dropdown_div">
-                        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                    </div>
-                    <div class="w3-bar-item dropdown_div">
-                        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                    </div>
+            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+                <div class="w3-bar-item dropdown_div">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+                <div class="w3-bar-item dropdown_div">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
                 </div>
             </div>
+        </div>
 
-            <div class="second_right_buttons">
-                <button class="first_dropdown_button"><h1 class="Go_to_docs">Go to docs</h1></button>
-                <button class="first_dropdown_button"><i class="material-icons three_points">more_vert</i> </button>
-                <button class="first_dropdown_button"><img class="user_image" src="Images/firebase_logo.png"> </button>
-            </div>
+        <div class="second_right_buttons">
+            <button class="first_dropdown_button"><h1 class="Go_to_docبs">Go to docs</h1></button>
+            <button class="first_dropdown_button"><i class="material-icons three_points">more_vert</i></button>
+            <button class="first_dropdown_button"><img class="user_image" src="Images/firebase_logo.png"></button>
+        </div>
 
         <!--</div>-->
 
@@ -181,6 +184,61 @@
                     <div class="overview_bar">
                         <h1 class="Overview_word">Overview</h1>
 
+                    </div>
+                    <div class="welcome_card">
+                        <div class="flex-col-container">
+                            <a>Welcome to Firebase! Get started here.</a>
+                        </div>
+                        <div class="flex-row-container">
+                            <div class="card">
+                                <div class="flex-col-container">
+                                    <img src="Images/ios_circ.png">
+                                    <a class="card_item_label">Add Firebase to<br>your iOS app</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="flex-col-container">
+                                    <img src="Images/android_circ.png">
+                                    <a class="card_item_label">Add Firebase to<br>your Android app</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="flex-col-container">
+                                    <img src="Images/web_circ.png">
+                                    <a class="card_item_label">Add Firebase to<br>your web app</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard">
+                        <div class="discover_firebase">
+                            <a>Discover Firebase</a>
+                        </div>
+                        <div class="card_holder">
+                            <div class="dash_card">
+                                <div class="flex-col-container">
+                                    <img src="Images/tile_01.png">
+                                    <div class="card_body">
+
+                                    </div>
+                                    <div class="card_footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dash_card">
+                                <div class="flex-col-container">
+                                    <img src="Images/tile_01.png">
+                                    <div class="card_body">
+
+                                    </div>
+                                    <div class="card_footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

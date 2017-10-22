@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    height: auto;
     /*width: 100%;*/
 }
 
 html {
-    height: 100%;
+    height: auto;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -33,7 +33,7 @@ html {
     width: 100%;
     height: 48px;
     z-index: 2;
-    box-shadow: 0px 2px 7px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.35);
     /*border-width: 0 0 3px 0;*/
     /*border-style: solid;*/
     /*-webkit-border-image:*/
@@ -60,16 +60,18 @@ html {
     background: linear-gradient(to bottom, #b6b6b6, #fafafa);
 }
 
-.user_image{
+.user_image {
     width: 32px;
     height: 32px;
     margin-right: 15px;
     margin-top: 6px;
 }
-.three_points{
+
+.three_points {
     margin-top: 11px;
     margin-right: 2px;
 }
+
 .firebase_topbar_topleft_logo {
     width: 142px;
     height: 48px;
@@ -82,12 +84,14 @@ html {
     outline: none;
 
 }
-.dropdown_div{
+
+.dropdown_div {
     border: solid #e0e0e0;
     border-width: 0px 0px 1px 0px;
     height: auto;
     padding: 0px 0px 0px 0px;
 }
+
 .first_dropdown_button {
     border: none;
     display: inline-block;
@@ -104,7 +108,8 @@ html {
     outline: none;
 
 }
-.first_dropdown_button:hover{
+
+.first_dropdown_button:hover {
     border: none;
     display: inline-block;
     outline: 0;
@@ -120,19 +125,20 @@ html {
     outline: none;
 
 }
-.topbar_row_container{
+
+.topbar_row_container {
     width: 100%;
 
 }
-.second_right_buttons{
+
+.second_right_buttons {
     /*position: fixed;*/
     /*display: inline-flex;*/
     cursor: pointer;
     float: right;
 }
 
-
-.first_dropdown{
+.first_dropdown {
     padding: 0 0 0 0;
     margin-top: 12px;
     margin-left: 0px;
@@ -145,11 +151,9 @@ html {
     cursor: pointer;
     z-index: 1;
 
-
-
-
 }
-.Go_to_docs{
+
+.Go_to_docs {
     margin-right: -1px;
     margin-top: 4px;
     height: 10px;
@@ -158,9 +162,10 @@ html {
     font-size: 13.5px;
     font-stretch: condensed;
     font-weight: bold;
-    transform: scale(0.95,1.1);
+    transform: scale(0.95, 1.1);
 }
-.first_dropdown_button_name{
+
+.first_dropdown_button_name {
     margin-top: 0px;
     margin-left: 32.5px;
     height: 10px;
@@ -168,10 +173,11 @@ html {
     letter-spacing: 0.02px;
     font-size: 13.5px;
     font-weight: bold;
-    transform: scale(1,1.1);
+    transform: scale(1, 1.1);
 
 }
-.Overview_word{
+
+.Overview_word {
     color: white;
     margin-top: 12px;
     margin-left: 25px;
@@ -181,10 +187,10 @@ html {
     font-size: 19px;
 
     font-weight: normal;
-    transform: scale(1,1.1);
+    transform: scale(1, 1.1);
 }
 
-.arrow_down{
+.arrow_down {
     margin-top: 4.5px;
     margin-left: 10.5px;
     height: 5px;
@@ -192,7 +198,7 @@ html {
     letter-spacing: 0.02px;
     font-size: 14px;
     font-weight: bold;
-    transform: scale(0.95,0.55);
+    transform: scale(0.95, 0.55);
 }
 
 .logo_name {
@@ -209,9 +215,7 @@ html {
 
 }
 
-
-
-.first_dropdown:hover{
+.first_dropdown:hover {
     color: #FFFFFF;
 }
 
@@ -228,6 +232,7 @@ html {
 .firebase_left_nav {
     width: 256px;
     color: #757575;
+    height: auto;
     /*position: absolute;*/
     /*left: 0px;*/
     /*right: 0px;*/
@@ -235,7 +240,7 @@ html {
     overflow-x: hidden;
     overflow-y: auto;
 
-    box-shadow: 1px 0px 3px rgba(0,0,0,0.2);
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 .firebase_body {
@@ -248,9 +253,10 @@ html {
 }
 
 .firebase_dash {
-    background-color: #FAFAFA;
+    background-color: #cfd8dc;
     width: 100%;
     z-index: -2;
+    overflow-y: scroll;
 
 }
 
@@ -262,12 +268,94 @@ html {
 
 }
 
-.firebase_left_nav #scrollable {
-    overflow-y: scroll;
-    height: 519px;
+.firebase_dash .welcome_card {
+    background-color: #FFFFFF;
+    height: 344px;
+    max-width: 100%;
+    padding: 48px 22% 76px 22%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
-.left_nav_header_modifier{
+.firebase_dash .welcome_card img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.firebase_dash .welcome_card .card {
+    margin: auto;
+}
+
+.firebase_dash .welcome_card a {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    color: #777777;
+}
+
+.firebase_dash .welcome_card .card_item_label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.firebase_dash .discover_firebase {
+
+    font-size: 14px;
+    margin: 45px 12px 12px 12px;
+    color: rgba(0,0,0,0.54);
+
+}
+
+.firebase_dash .dashboard {
+    max-width: 960px;
+    padding: 0 12px 0 12px;
+    margin: auto;
+
+}
+
+.firebase_dash .dashboard .card_holder {
+
+}
+
+.firebase_dash .dash_card {
+    width: 296px;
+    height: 296px;
+    /*margin: auto;*/
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    margin: 0 12px 24px 12px;
+}
+
+.firebase_dash .dash_card img {
+    width: auto;
+    height: 124px;
+}
+
+.firebase_dash .dash_card .card_body {
+    padding: 16px;
+    height: 92px;
+    width: auto;
+}
+
+.firebase_dash .dash_card .card_title {
+
+}
+
+.firebase_dash .dash_card .card_footer {
+    height: 44px;
+    margin: auto;
+}
+
+.firebase_left_nav #scrollable {
+    overflow-y: scroll;
+    height: auto;
+}
+
+.left_nav_header_modifier {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -275,15 +363,16 @@ html {
     /*height: 58px;*/
 }
 
-.left_nav_header_overview_modifier{
+.left_nav_header_overview_modifier {
     font-size: 14px;
     margin-top: -20px;
     margin-left: 12px;
     font-weight: bold;
     display: inline-flex;
     padding: 0 0 0 0;
-    transform: scale(0.9,1);
+    transform: scale(0.9, 1);
 }
+
 .firebase_left_nav .left_nav_header {
 
     width: 100%;
@@ -447,3 +536,6 @@ html {
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
+
+
+

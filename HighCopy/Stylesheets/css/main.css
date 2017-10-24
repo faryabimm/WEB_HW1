@@ -96,6 +96,9 @@ html {
     border: none;
     display: inline-block;
     outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
     /*padding: 8px 16px;*/
     vertical-align: middle;
     /*overflow: hidden;*/
@@ -103,9 +106,6 @@ html {
     color: #b4dcf1;
     background-color: #0288d1;
     text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-    outline: none;
 
 }
 
@@ -255,16 +255,16 @@ html {
 .firebase_dash {
     background-color: #cfd8dc;
     width: 100%;
-    z-index: -2;
+    height: 630px;                  /* MANUAL HEIGHT */
+    /*z-index: -2;*/
     overflow-y: scroll;
-
 }
 
 .firebase_dash .overview_bar {
     height: 56px;
     width: 100%;
     background-color: #039BE5;
-    z-index: -1;
+    z-index: +1;
 
 }
 
@@ -306,22 +306,25 @@ html {
 
     font-size: 14px;
     margin: 45px 12px 12px 12px;
-    color: rgba(0,0,0,0.54);
+    color: rgba(0, 0, 0, 0.54);
 
 }
 
 .firebase_dash .dashboard {
-    max-width: 960px;
+    max-width: 984px;
     padding: 0 12px 0 12px;
     margin: auto;
 
 }
 
 .firebase_dash .dashboard .card_holder {
-
+    margin: auto;
+    padding: auto;
 }
 
+
 .firebase_dash .dash_card {
+    float: left;
     width: 296px;
     height: 296px;
     /*margin: auto;*/
@@ -337,22 +340,33 @@ html {
 
 .firebase_dash .dash_card .card_body {
     padding: 16px;
-    height: 92px;
+    height: 124px;
     width: auto;
 }
 
 .firebase_dash .dash_card .card_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+    height: 24px;
+    margin-bottom: 8px;
+}
 
+.firebase_dash .dash_card .card_description {
+    font-size: 13px;;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 20px;
 }
 
 .firebase_dash .dash_card .card_footer {
     height: 44px;
     margin: auto;
+    margin-top: 15px;
 }
 
 .firebase_left_nav #scrollable {
     overflow-y: scroll;
-    height: auto;
+    height: 526px;
 }
 
 .left_nav_header_modifier {
@@ -416,20 +430,32 @@ html {
     font-size: 12px;
 }
 
-.firebase_left_nav .left_nav_footer .spark .upgrade_button {
-    font-size: 13px;
+.upgrade_button {
+
+    font-size: 14px;
     font-weight: 500;
     color: #039BE5;
     background-color: inherit;
     text-transform: uppercase;
-
+    margin-left: 80px;
     padding: 8px 12px 8px 12px;
-    margin-left: 58px;
     vertical-align: middle;
     horiz-align: center;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    z-index: +10;
 }
 
-.firebase_left_nav .left_nav_footer .spark .upgrade_button:hover {
+.spark .upgrade_button {
+    margin-left: 58px;
+    font-size: 13px;
+}
+
+.upgrade_button:hover {
     background-color: #E0F3FC;
 }
 

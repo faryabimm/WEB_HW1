@@ -372,6 +372,24 @@ html {
 
 }
 
+.firebase_dash .terms-privacy {
+
+    font-size: 13px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.38);
+
+}
+
+.firebase_dash .terms-privacy a{
+    cursor: pointer;
+}
+
+.firebase_dash .terms-privacy a:hover{
+    color: #039BE5;
+}
+
 .firebase_dash .dashboard {
     max-width: 984px;
     padding: 0 12px 0 12px;

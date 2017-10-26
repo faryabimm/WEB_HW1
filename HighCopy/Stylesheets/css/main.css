@@ -184,7 +184,7 @@ html, body {
 .first_dropdown {
     padding: 0 0 0 0;
     margin-top: 12px;
-    margin-left: 0px;
+    margin-left: 10px;
 
     /*display: flex;*/
     /*flex-direction: row;*/
@@ -196,16 +196,28 @@ html, body {
 
 }
 
+
+
 .Go_to_docs {
-    margin-right: -1px;
-    margin-top: 4px;
-    height: 10px;
-    font-stretch: condensed;
-    letter-spacing: 0.02px;
-    font-size: 13.5px;
-    font-stretch: condensed;
-    font-weight: bold;
-    transform: scale(0.95, 1.1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.view-only {
+    font-size: 13px;
+    font-weight: 500;
+    color: #bee9fe;
+    background-color: #039BE5;
+    margin: auto 10px auto auto;
+    vertical-align: middle;
+    horiz-align: center;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    border-radius: 20px;
 }
 
 .first_dropdown_button_name {

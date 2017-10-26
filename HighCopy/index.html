@@ -187,16 +187,36 @@
         </div>
 
         <div class="second_right_buttons">
-            <button class="first_dropdown_button"><h1 class="Go_to_docs">Go to docs</h1></button>
+            <button class="first_dropdown_button view-only">
+                <i class="mdi mdi-eye" style="font-size: 16px"></i>
+                View only
+            </button>
+            <button class="first_dropdown_button">
+                <div class="Go_to_docs">Go to docs</div>
+            </button>
             <button class="first_dropdown_button" onclick="show_right_dropdown()">
                 <i class="material-icons three_points">more_vert</i>
             </button>
-            <div id="right_dropdown" class="w3-dropdown-content w3-bar-block w3-border" style="border-radius: 4px">
+            <div id="right_dropdown" class="w3-dropdown-content w3-bar-block w3-border" style="border-radius: 3px">
+                <div class="w3-bar-item dropdown_div">
+                    <a href="#" class="w3-bar-item w3-button">Firebase docs&nbsp;&nbsp;&nbsp;
+                        <i class="mdi mdi-open-in-new" style="font-size: 15px; color: #888888"></i>
+                    </a>
+                </div>
                 <div class="w3-bar-item dropdown_div">
                     <a href="#" class="w3-bar-item w3-button">Alert subscriptions</a>
                 </div>
             </div>
-            <button class="first_dropdown_button"><img class="user_image" src="Images/firebase_logo.png"></button>
+            <button class="first_dropdown_button">
+                <svg class="user_image" height="100" width="100">
+                    <circle cx="16" cy="16" r="16" fill="#9E3DB5">
+                    </circle>
+                    <text x="50%" y="50%" text-anchor="middle" stroke="white" fill="white" dy=".3em" font-size="14fpx">
+                        O
+                    </text>
+                </svg>
+                <!--<img class="user_image" src="Images/firebase_logo.png">-->
+            </button>
         </div>
     </div>
     <div class="flex-row-container">

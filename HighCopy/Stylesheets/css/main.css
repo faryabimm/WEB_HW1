@@ -343,7 +343,7 @@ html, body {
     width: 100%;
     height: 630px;                  /* MANUAL HEIGHT */
     /*z-index: -2;*/
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .firebase_dash .overview_bar {
@@ -489,21 +489,21 @@ html, body {
 }
 
 .firebase_left_nav #scrollable1 {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     height: 525px;
     border-bottom: 1px solid #DCDCDC;
 }
 
 .firebase_left_nav_collapsed #scrollable2 {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     height: 586px;
     border-bottom: 1px solid #DCDCDC;
 }
 
 .firebase_left_nav #scrollable3 {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     height: 570px;
     border-bottom: 1px solid #DCDCDC;

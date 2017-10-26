@@ -531,6 +531,32 @@ html {
     outline: none;
 }
 
+
+.dash_card .upgrade_button {
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #039BE5;
+    background-color: inherit;
+    text-transform: uppercase;
+    margin: auto auto auto 70px;
+    padding: 8px 12px 2px 12px;
+    vertical-align: middle;
+    horiz-align: center;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+}
+
+.card_footer a{
+    padding-left: 20px;
+    color: #039be5;
+}
+
+
 .spark .upgrade_button {
     margin-left: 58px;
     font-size: 13px;

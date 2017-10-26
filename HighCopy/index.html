@@ -29,7 +29,7 @@
     function show_floating_navbar() {
         var x = document.getElementById("floating_navbar");
         var y = document.getElementById("navbar_overlay");
-        if(x.style.display=="none"){
+        if(x.style.display==="none"){
             x.style.display="inline-flex";
             y.style.display="inline-flex";
         } else {
@@ -40,8 +40,8 @@
 
 </script>
 <body>
-<div id="navbar_overlay" onclick="show_floating_navbar()"></div>
-<div class="flex-col-container z-index-modifier" id="floating_navbar">
+<div id="navbar_overlay" onclick="show_floating_navbar()" style="display: none"></div>
+<div id="floating_navbar" style="display: none">
     <!--style="display: none;"-->
 
     <div class="firebase_topbar_floating">
@@ -166,8 +166,10 @@
 
         <div class="first_dropdown">
             <button onclick="show_left_dropdown()" class="first_dropdown_button">
-                <div class="flex-row-container"><h1 class="first_dropdown_button_name">first</h1>
-                    <h1 class="arrow_down">&#9660</h1></div>
+                <div class="flex-row-container">
+                    <h1 class="first_dropdown_button_name">first</h1>
+                    <h1 class="arrow_down">&#9660</h1>
+                </div>
             </button>
             <div id="left_dropdown" class="w3-dropdown-content w3-bar-block w3-border">
                 <div class="w3-bar-item dropdown_div">

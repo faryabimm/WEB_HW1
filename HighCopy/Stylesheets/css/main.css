@@ -36,6 +36,14 @@ html, body {
 .z-index-modifier {
     z-index: 2;
 }
+@media all and (max-width: 600px) {
+    .welcome_card{display: none}
+    .first_dropdown{display: none}
+    .Go_to_docs{display: none}
+    .first_dropdown_button{display: none}
+    .first_dropdown_button_name{display: none}
+    .arrow_down{display: none}
+}
 
 @media all and (max-width: 900px) {
 

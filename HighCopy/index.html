@@ -26,8 +26,21 @@
         }
     }
 
+    function show_floating_navbar() {
+        var x = document.getElementById("floating_navbar");
+        var y = document.getElementById("navbar_overlay");
+        if(x.style.display=="none"){
+            x.style.display="inline-flex";
+            y.style.display="inline-flex";
+        } else {
+            x.style.display="none";
+            y.style.display="none"
+        }
+    }
+
 </script>
 <body>
+<div id="navbar_overlay" onclick="show_floating_navbar()"></div>
 <div class="flex-col-container z-index-modifier" id="floating_navbar">
     <!--style="display: none;"-->
 
@@ -146,7 +159,7 @@
         <button class="firebase_topbar_topleft_logo">
             <div class="flex-row-container">
                 <img class="logo_picture" src="Images/firebase_logo.png">
-                <i class="material-icons-2 hamburger-logo">menu</i>
+                <i class="material-icons-2 hamburger-logo" onclick="show_floating_navbar()">menu</i>
                 <h1 class="logo_name">Firebase</h1>
             </div>
         </button>

@@ -194,7 +194,7 @@ html {
     /*display: flex;*/
     /*flex-direction: row;*/
     background-color: #0288d1;
-    position: fixed;
+    /*position: fixed;*/
     display: inline-flex;
     cursor: pointer;
     z-index: 1;

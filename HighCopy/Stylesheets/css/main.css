@@ -233,6 +233,8 @@ html {
     letter-spacing: 0.02px;
     font-size: 19px;
 
+    display: inline-block;
+
     font-weight: normal;
     transform: scale(1, 1.1);
 }
@@ -330,6 +332,24 @@ html {
 
 }
 
+.firebase_dash .overview_bar .help_button{
+    color: #B0DFF6;
+    font-size: 24px;
+    margin-top: 16px;
+    margin-right: 24px;
+    height: auto;
+    width:auto;
+}
+
+.firebase_dash .overview_bar .help_button:hover{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 16px;
+    margin-right: 24px;
+    height: auto;
+    width:auto;
+}
+
 .firebase_dash .welcome_card {
     background-color: #FFFFFF;
     height: 344px;
@@ -411,6 +431,8 @@ html {
     background-color: #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
     margin: 0 12px 24px 12px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .firebase_dash .dash_card img {
@@ -513,7 +535,7 @@ html {
     width: 100%;
     height: 60px;
 
-    padding: 12px 24px 12px 24px;
+    padding: 6px 24px 12px 24px;
 }
 
 .firebase_left_nav .left_nav_footer .spark .top_label {

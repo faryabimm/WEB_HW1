@@ -17,6 +17,15 @@
         }
     }
 
+    function show_right_dropdown() {
+        var x = document.getElementById("right_dropdown");
+        if (x.className.indexOf("w3-show") === -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
 </script>
 <body>
 
@@ -53,627 +62,634 @@
 
         <div class="second_right_buttons">
             <button class="first_dropdown_button"><h1 class="Go_to_docs">Go to docs</h1></button>
-            <button class="first_dropdown_button"><i class="material-icons three_points">more_vert</i></button>
+            <button class="first_dropdown_button" onclick="show_right_dropdown()">
+                <i class="material-icons three_points">more_vert</i>
+            </button>
+            <div id="right_dropdown" class="w3-dropdown-content w3-bar-block w3-border" style="border-radius: 4px">
+                <div class="w3-bar-item dropdown_div">
+                    <a href="#" class="w3-bar-item w3-button">Alert subscriptions</a>
+                </div>
+            </div>
             <button class="first_dropdown_button"><img class="user_image" src="Images/firebase_logo.png"></button>
         </div>
-
-
     </div>
+</div>
+<div class="flex-row-container">
+    <div class="flex-col-container z-index-modifier" id="large_navbar">
+        <!--<div class="firebase_topbar_bottom_shadow_for_nav">-->
 
-    <div class="flex-row-container">
-        <div class="flex-col-container z-index-modifier" id="large_navbar">
-            <!--<div class="firebase_topbar_bottom_shadow_for_nav">-->
-
-            <!--</div>-->
-            <div class="firebase_left_nav">
-                <div id="scrollable1">
-                    <div class="left_nav_header">
-                        <div class="left_nav_header_modifier">
-                            <div class="navbar_item">
-                                <i class="mdi mdi-home"></i>
-                                <h1 class="left_nav_header_overview_modifier">Overview</h1>
-                            </div>
-                            <div class="navbar_item" id="settings">
-                                <i class="mdi mdi-settings"></i>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-google-analytics"></i>
-                        <span>Analytics</span>
-                    </div>
-
-                    <div class="navbar_label">
-                        develop
-                    </div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-account-multiple"></i>
-                        <span>Authentication</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-dns"></i>
-                        <span>Database</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-folder-image"></i>
-                        <span>Storage</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-earth"></i>
-                        <span>Hosting</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-json"></i>
-                        <span>Functions</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-checkbox-marked-outline"></i>
-                        <span>Test Lab</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-bug"></i>
-                        <span>Crash Reporting</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-gauge"></i>
-                        <span>Performance</span>
-                    </div>
-
-                    <div class="navbar_label">
-                        grow
-                    </div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-message-bulleted"></i>
-                        <span>Notification</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-source-branch"></i>
-                        <span>Remote Config</span>
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-link"></i>
-                        <span>Dynamic Links</span>
-                    </div>
-
-                    <div class="navbar_label">
-                        earn
-                    </div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-case-sensitive-alt"></i>
-                        <span>AdMob</span>
-                    </div>
-
-
-                </div>
-                <div class="left_nav_footer">
-                    <div class="spark">
-                        <div class="flex-row-container">
-                            <div class="spark_container">
-                                <div class="flex-col-container">
-                                    <div class="top_label">
-                                        Spark
-                                    </div>
-                                    <div class="bottom_label">
-                                        Free $0/month
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="upgrade_button">
-                                upgrade
-                            </div>
-                        </div>
-
-                    </div>
-                    <button class="sidebar_collapse" onclick="click_large_collapse()">
-                        <i class="mdi mdi-chevron-left"></i>
-                    </button>
-                    <script>
-                        function click_large_collapse() {
-                            var x = document.getElementById("small_navbar");
-                            var y = document.getElementById("large_navbar");
-                            x.style.display = "inline";
-                            y.style.display = "none";
-                        }
-                    </script>
-                </div>
-
-            </div>
-
-
-        </div>
-        <div class="flex-col-container" id="small_navbar" style="display: none">
-            <div class="firebase_left_nav_collapsed">
-                <div id="scrollable2">
-                    <div class="left_nav_header">
-
+        <!--</div>-->
+        <div class="firebase_left_nav">
+            <div id="scrollable1">
+                <div class="left_nav_header">
+                    <div class="left_nav_header_modifier">
                         <div class="navbar_item">
                             <i class="mdi mdi-home"></i>
+                            <h1 class="left_nav_header_overview_modifier">Overview</h1>
                         </div>
-                        <div class="navbar_item" id="settings2">
+                        <div class="navbar_item" id="settings">
                             <i class="mdi mdi-settings"></i>
                         </div>
-
-
                     </div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-google-analytics"></i>
-                    </div>
-
-                    <div class="navbar_separator"></div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-account-multiple"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-dns"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-folder-image"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-earth"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-json"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-checkbox-marked-outline"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-bug"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-gauge"></i>
-
-                    </div>
-
-                    <div class="navbar_separator"></div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-message-bulleted"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-source-branch"></i>
-
-                    </div>
-                    <div class="navbar_item">
-                        <i class="mdi mdi-link"></i>
-
-                    </div>
-
-                    <div class="navbar_separator"></div>
-
-                    <div class="navbar_item">
-                        <i class="mdi mdi-case-sensitive-alt"></i>
-
-                    </div>
-
 
                 </div>
-                <div class="left_nav_footer">
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-google-analytics"></i>
+                    <span>Analytics</span>
                 </div>
-                <button class="sidebar_collapse" onclick="click_small_collapse()">
-                    <i class="mdi mdi-chevron-right"></i>
+
+                <div class="navbar_label">
+                    develop
+                </div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-account-multiple"></i>
+                    <span>Authentication</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-dns"></i>
+                    <span>Database</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-folder-image"></i>
+                    <span>Storage</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-earth"></i>
+                    <span>Hosting</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-json"></i>
+                    <span>Functions</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-checkbox-marked-outline"></i>
+                    <span>Test Lab</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-bug"></i>
+                    <span>Crash Reporting</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-gauge"></i>
+                    <span>Performance</span>
+                </div>
+
+                <div class="navbar_label">
+                    grow
+                </div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-message-bulleted"></i>
+                    <span>Notification</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-source-branch"></i>
+                    <span>Remote Config</span>
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-link"></i>
+                    <span>Dynamic Links</span>
+                </div>
+
+                <div class="navbar_label">
+                    earn
+                </div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-case-sensitive-alt"></i>
+                    <span>AdMob</span>
+                </div>
+
+
+            </div>
+            <div class="left_nav_footer">
+                <div class="spark">
+                    <div class="flex-row-container">
+                        <div class="spark_container">
+                            <div class="flex-col-container">
+                                <div class="top_label">
+                                    Spark
+                                </div>
+                                <div class="bottom_label">
+                                    Free $0/month
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upgrade_button">
+                            upgrade
+                        </div>
+                    </div>
+
+                </div>
+                <button class="sidebar_collapse" onclick="click_large_collapse()">
+                    <i class="mdi mdi-chevron-left"></i>
                 </button>
                 <script>
-                    function click_small_collapse() {
+                    function click_large_collapse() {
                         var x = document.getElementById("small_navbar");
                         var y = document.getElementById("large_navbar");
-                        y.style.display = "inline";
-                        x.style.display = "none";
+                        x.style.display = "inline";
+                        y.style.display = "none";
                     }
                 </script>
             </div>
+
         </div>
 
-        <div class="firebase_dash">
+
+    </div>
+    <div class="flex-col-container" id="small_navbar" style="display: none">
+        <div class="firebase_left_nav_collapsed">
+            <div id="scrollable2">
+                <div class="left_nav_header">
+
+                    <div class="navbar_item">
+                        <i class="mdi mdi-home"></i>
+                    </div>
+                    <div class="navbar_item" id="settings2">
+                        <i class="mdi mdi-settings"></i>
+                    </div>
+
+
+                </div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-google-analytics"></i>
+                </div>
+
+                <div class="navbar_separator"></div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-account-multiple"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-dns"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-folder-image"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-earth"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-json"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-checkbox-marked-outline"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-bug"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-gauge"></i>
+
+                </div>
+
+                <div class="navbar_separator"></div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-message-bulleted"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-source-branch"></i>
+
+                </div>
+                <div class="navbar_item">
+                    <i class="mdi mdi-link"></i>
+
+                </div>
+
+                <div class="navbar_separator"></div>
+
+                <div class="navbar_item">
+                    <i class="mdi mdi-case-sensitive-alt"></i>
+
+                </div>
+
+
+            </div>
+            <div class="left_nav_footer">
+            </div>
+            <button class="sidebar_collapse" onclick="click_small_collapse()">
+                <i class="mdi mdi-chevron-right"></i>
+            </button>
+            <script>
+                function click_small_collapse() {
+                    var x = document.getElementById("small_navbar");
+                    var y = document.getElementById("large_navbar");
+                    y.style.display = "inline";
+                    x.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="firebase_dash">
+        <div class="flex-col-container">
+
             <div class="flex-col-container">
+                <!--<div class="firebase_topbar_bottom_shadow">-->
 
-                <div class="flex-col-container">
-                    <!--<div class="firebase_topbar_bottom_shadow">-->
+                <!--</div>-->
+                <div class="overview_bar">
+                    <h1 class="Overview_word">Overview</h1>
 
-                    <!--</div>-->
-                    <div class="overview_bar">
-                        <h1 class="Overview_word">Overview</h1>
-
-                    </div>
-                    <div class="welcome_card">
-                        <div class="flex-col-container">
-                            <a>Welcome to Firebase! Get started here.</a>
-                        </div>
-                        <div class="flex-row-container">
-                            <div class="card">
-                                <div class="flex-col-container">
-                                    <img src="Images/ios_circ.png">
-                                    <a class="card_item_label">Add Firebase to<br>your iOS app</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="flex-col-container">
-                                    <img src="Images/android_circ.png">
-                                    <a class="card_item_label">Add Firebase to<br>your Android app</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="flex-col-container">
-                                    <img src="Images/web_circ.png">
-                                    <a class="card_item_label">Add Firebase to<br>your web app</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dashboard">
-                        <div class="discover_firebase">
-                            <a>Discover Firebase</a>
-                        </div>
-                        <div class="card_holder">
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_01.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Analytics
-                                        </div>
-                                        <div class="card_description">
-                                            Get detailed analytics to measure and analyze how users engage with your app
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_02.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Authentication
-                                        </div>
-                                        <div class="card_description">
-                                            Authenticate and manage users from a variety of providers without
-                                            server-side
-                                            code
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_03.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Database
-                                        </div>
-                                        <div class="card_description">
-                                            Store and sync data in realtime across all connected clients
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_04.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Storage
-                                        </div>
-                                        <div class="card_description">
-                                            Store and retrieve user generated content like images, audio, and video
-                                            without server-side code
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_05.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Hosting
-                                        </div>
-                                        <div class="card_description">
-                                            Deploy web and mobile web apps in seconds using a secure global
-                                            content delivery network
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_06.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Cloud Functions
-                                        </div>
-                                        <div class="card_description">
-                                            Run managed backend code for your mobile app that extends
-                                            and connects Firebase features
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_07.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Test Lab
-                                        </div>
-                                        <div class="card_description">
-                                            Test your Android apps against a wide range of devices
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_08.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Crash Reporting
-                                        </div>
-                                        <div class="card_description">
-                                            Get actionable insights and comprehensive analytics whenever
-                                            your app crashes or stops working
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_09.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Notifications
-                                        </div>
-                                        <div class="card_description">
-                                            Manage notification campaigns and send messages to engage
-                                            the right users at the right moment
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_10.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Remote Config
-                                        </div>
-                                        <div class="card_description">
-                                            Customize and experiment with app behavior using server-side
-                                            configuration parameters
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_11.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Dynamic Links
-                                        </div>
-                                        <div class="card_description">
-                                            Send users to the right place in your app whether or not it is already
-                                            installed
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_12.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            AdMob
-                                        </div>
-                                        <div class="card_description">
-                                            Earn more from your apps the smart way by showing ads
-                                            from millions of Google advertisers
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_13.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            Cloud Messaging
-                                        </div>
-                                        <div class="card_description">
-                                            Send and receive messages reliably across platforms
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button" style="visibility: hidden">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_14.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            AdWords
-                                        </div>
-                                        <div class="card_description">
-                                            Drive installs, gain deep insights into your conversions and run
-                                            targeted campaigns to engage your userbase
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button" style="visibility: hidden">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dash_card">
-                                <div class="flex-col-container">
-                                    <img src="Images/tile_15.png">
-                                    <div class="card_body">
-                                        <div class="card_title">
-                                            App Indexing
-                                        </div>
-                                        <div class="card_description">
-                                            Drive organic search traffic to your app
-                                        </div>
-
-                                    </div>
-                                    <div class="card_footer">
-                                        <a href="#">Learn more</a>
-                                        <div class="upgrade_button" style="visibility: hidden">
-                                            Get started
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div style="clear: both"></div>
-
-
-                        </div>
-                        <div class="terms-privacy">
-                            <a>Terms</a>
-                            &nbsp;·&nbsp;
-                            <a>Privacy Policy</a>
+                    <div class="second_right_buttons">
+                        <div class="help_button">
+                            <i class="mdi mdi-help-circle"></i>
                         </div>
                     </div>
 
                 </div>
+                <div class="welcome_card">
+                    <div class="flex-col-container">
+                        <a>Welcome to Firebase! Get started here.</a>
+                    </div>
+                    <div class="flex-row-container">
+                        <div class="card">
+                            <div class="flex-col-container">
+                                <img src="Images/ios_circ.png">
+                                <a class="card_item_label">Add Firebase to<br>your iOS app</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="flex-col-container">
+                                <img src="Images/android_circ.png">
+                                <a class="card_item_label">Add Firebase to<br>your Android app</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="flex-col-container">
+                                <img src="Images/web_circ.png">
+                                <a class="card_item_label">Add Firebase to<br>your web app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard">
+                    <div class="discover_firebase">
+                        <a>Discover Firebase</a>
+                    </div>
+                    <div class="card_holder">
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_01.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Analytics
+                                    </div>
+                                    <div class="card_description">
+                                        Get detailed analytics to measure and analyze how users engage with your app
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_02.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Authentication
+                                    </div>
+                                    <div class="card_description">
+                                        Authenticate and manage users from a variety of providers without
+                                        server-side
+                                        code
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_03.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Database
+                                    </div>
+                                    <div class="card_description">
+                                        Store and sync data in realtime across all connected clients
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_04.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Storage
+                                    </div>
+                                    <div class="card_description">
+                                        Store and retrieve user generated content like images, audio, and video
+                                        without server-side code
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_05.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Hosting
+                                    </div>
+                                    <div class="card_description">
+                                        Deploy web and mobile web apps in seconds using a secure global
+                                        content delivery network
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_06.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Cloud Functions
+                                    </div>
+                                    <div class="card_description">
+                                        Run managed backend code for your mobile app that extends
+                                        and connects Firebase features
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_07.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Test Lab
+                                    </div>
+                                    <div class="card_description">
+                                        Test your Android apps against a wide range of devices
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_08.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Crash Reporting
+                                    </div>
+                                    <div class="card_description">
+                                        Get actionable insights and comprehensive analytics whenever
+                                        your app crashes or stops working
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_09.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Notifications
+                                    </div>
+                                    <div class="card_description">
+                                        Manage notification campaigns and send messages to engage
+                                        the right users at the right moment
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_10.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Remote Config
+                                    </div>
+                                    <div class="card_description">
+                                        Customize and experiment with app behavior using server-side
+                                        configuration parameters
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_11.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Dynamic Links
+                                    </div>
+                                    <div class="card_description">
+                                        Send users to the right place in your app whether or not it is already
+                                        installed
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_12.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        AdMob
+                                    </div>
+                                    <div class="card_description">
+                                        Earn more from your apps the smart way by showing ads
+                                        from millions of Google advertisers
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_13.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        Cloud Messaging
+                                    </div>
+                                    <div class="card_description">
+                                        Send and receive messages reliably across platforms
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button" style="visibility: hidden">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_14.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        AdWords
+                                    </div>
+                                    <div class="card_description">
+                                        Drive installs, gain deep insights into your conversions and run
+                                        targeted campaigns to engage your userbase
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button" style="visibility: hidden">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash_card">
+                            <div class="flex-col-container">
+                                <img src="Images/tile_15.png">
+                                <div class="card_body">
+                                    <div class="card_title">
+                                        App Indexing
+                                    </div>
+                                    <div class="card_description">
+                                        Drive organic search traffic to your app
+                                    </div>
+
+                                </div>
+                                <div class="card_footer">
+                                    <a href="#">Learn more</a>
+                                    <div class="upgrade_button" style="visibility: hidden">
+                                        Get started
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style="clear: both"></div>
+
+
+                    </div>
+                    <div class="terms-privacy">
+                        <a>Terms</a>
+                        &nbsp;·&nbsp;
+                        <a>Privacy Policy</a>
+                    </div>
+                </div>
+
             </div>
-
         </div>
-    </div>
-    <!--#################################################################################################-->
 
+    </div>
 </div>
 </div>
 

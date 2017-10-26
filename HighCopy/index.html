@@ -55,17 +55,16 @@
             <button class="first_dropdown_button"><img class="user_image" src="Images/firebase_logo.png"></button>
         </div>
 
-        <!--</div>-->
 
     </div>
 
     <div class="flex-row-container">
-        <div class="flex-col-container">
+        <div class="flex-col-container" id="large_navbar">
             <!--<div class="firebase_topbar_bottom_shadow_for_nav">-->
 
             <!--</div>-->
             <div class="firebase_left_nav">
-                <div id="scrollable">
+                <div id="scrollable1">
                     <div class="left_nav_header">
                         <div class="left_nav_header_modifier">
                             <div class="navbar_item">
@@ -73,7 +72,7 @@
                                 <h1 class="left_nav_header_overview_modifier">Overview</h1>
                             </div>
                             <div class="navbar_item" id="settings">
-                                <i class="material-icons">settings</i>
+                                <i class="mdi mdi-settings"></i>
                             </div>
                         </div>
 
@@ -101,7 +100,7 @@
                         <span>Storage</span>
                     </div>
                     <div class="navbar_item">
-                        <i class="material-icons">public</i>
+                        <i class="mdi mdi-earth"></i>
                         <span>Hosting</span>
                     </div>
                     <div class="navbar_item">
@@ -113,7 +112,7 @@
                         <span>Test Lab</span>
                     </div>
                     <div class="navbar_item">
-                        <i class="material-icons">bug_report</i>
+                        <i class="mdi mdi-bug"></i>
                         <span>Crash Reporting</span>
                     </div>
                     <div class="navbar_item">
@@ -152,12 +151,14 @@
                 <div class="left_nav_footer">
                     <div class="spark">
                         <div class="flex-row-container">
-                            <div class="flex-col-container">
-                                <div class="top_label">
-                                    Spark
-                                </div>
-                                <div class="bottom_label">
-                                    Free $0/month
+                            <div class="spark_container">
+                                <div class="flex-col-container">
+                                    <div class="top_label">
+                                        Spark
+                                    </div>
+                                    <div class="bottom_label">
+                                        Free $0/month
+                                    </div>
                                 </div>
                             </div>
                             <div class="upgrade_button">
@@ -166,11 +167,115 @@
                         </div>
 
                     </div>
-                    <div class="sidebar_collapse">
+                    <button class="sidebar_collapse" onclick="click_large_collapse()">
                         <i class="mdi mdi-chevron-left"></i>
-                    </div>
+                    </button>
+                    <script>
+                        function click_large_collapse() {
+                            var x = document.getElementById("small_navbar");
+                            var y = document.getElementById("large_navbar");
+                            x.style.display = "inline";
+                            y.style.display = "none";
+                        }
+                    </script>
                 </div>
 
+            </div>
+
+
+        </div>
+        <!--#################################################################################################-->
+        <div class="flex-col-container" id="small_navbar" style="display: none">
+            <div class="firebase_left_nav_collapsed">
+                <div id="scrollable2">
+                    <div class="left_nav_header">
+
+                        <div class="navbar_item">
+                            <i class="mdi mdi-home"></i>
+                        </div>
+                        <div class="navbar_item" id="settings2">
+                            <i class="mdi mdi-settings"></i>
+                        </div>
+
+
+                    </div>
+
+                    <div class="navbar_item">
+                        <i class="mdi mdi-google-analytics"></i>
+                    </div>
+
+                    <div class="navbar_separator"></div>
+
+                    <div class="navbar_item">
+                        <i class="mdi mdi-account-multiple"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-dns"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-folder-image"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-earth"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-json"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-checkbox-marked-outline"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-bug"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-gauge"></i>
+
+                    </div>
+
+                    <div class="navbar_separator"></div>
+
+                    <div class="navbar_item">
+                        <i class="mdi mdi-message-bulleted"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-source-branch"></i>
+
+                    </div>
+                    <div class="navbar_item">
+                        <i class="mdi mdi-link"></i>
+
+                    </div>
+
+                    <div class="navbar_separator"></div>
+
+                    <div class="navbar_item">
+                        <i class="mdi mdi-case-sensitive-alt"></i>
+
+                    </div>
+
+
+                </div>
+                <div class="left_nav_footer">
+                </div>
+                <button class="sidebar_collapse" onclick="click_small_collapse()">
+                    <i class="mdi mdi-chevron-right"></i>
+                </button>
+                <script>
+                    function click_small_collapse() {
+                        var x = document.getElementById("small_navbar");
+                        var y = document.getElementById("large_navbar");
+                        y.style.display = "inline";
+                        x.style.display = "none";
+                    }
+                </script>
             </div>
         </div>
 
@@ -246,7 +351,9 @@
                                             Authentication
                                         </div>
                                         <div class="card_description">
-                                            Authenticate and manage users from a variety of providers without server-side code
+                                            Authenticate and manage users from a variety of providers without
+                                            server-side
+                                            code
                                         </div>
 
                                     </div>
@@ -303,7 +410,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
 
                             <div class="dash_card">
@@ -447,7 +553,8 @@
                                             Dynamic Links
                                         </div>
                                         <div class="card_description">
-                                            Send users to the right place in your app whether or not it is already installed
+                                            Send users to the right place in your app whether or not it is already
+                                            installed
                                         </div>
 
                                     </div>
@@ -483,8 +590,6 @@
                             </div>
 
 
-
-
                             <div class="dash_card">
                                 <div class="flex-col-container">
                                     <img src="Images/tile_13.png">
@@ -505,7 +610,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
 
                             <div class="dash_card">
@@ -538,7 +642,8 @@
                                             App Indexing
                                         </div>
                                         <div class="card_description">
-                                            Drive organic search traffic to your app                                        </div>
+                                            Drive organic search traffic to your app
+                                        </div>
 
                                     </div>
                                     <div class="card_footer">
@@ -562,6 +667,9 @@
 
         </div>
     </div>
+    <!--#################################################################################################-->
+
+</div>
 </div>
 
 

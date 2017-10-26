@@ -28,12 +28,59 @@ html {
     flex-direction: row;
 }
 
+.flex-row-container-2 {
+
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.z-index-modifier{
+    z-index: 2;
+}
+
+@media all and (max-width: 900px) {
+
+    .firebase_left_nav{display: none}
+    .logo_picture{display: none}
+    .hamburger-logo{display: inline-flex}
+}
+@media all and (min-width: 900px) {
+
+    /*.firebase_left_nav{display: none}*/
+    /*.logo_picture{display: none}*/
+    .hamburger-logo{display: none}
+}
+.hamburger-logo{
+    margin-top: 11px;
+    margin-left: 18px;
+    margin-right: 4px;
+    color: #b4dcf1;
+    /*display: none;*/
+}
+.hamburger-logo:hover{
+    margin-top: 11px;
+    margin-left: 18px;
+    margin-right: 4px;
+    color: #ffffff;
+    /*display: none;*/
+}
+.flex-col-container-2{
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+    position: relative;
+}
+
 .firebase_topbar {
     background-color: #0288D1;
     width: 100%;
     height: 48px;
-    z-index: 2;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.35);
+    z-index: 3;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
     /*border-width: 0 0 3px 0;*/
     /*border-style: solid;*/
     /*-webkit-border-image:*/
@@ -663,6 +710,31 @@ html {
     font-style: normal;
     font-size: 24px; /* Preferred icon size */
     display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons-2{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    /*display: inline-block;*/
     line-height: 1;
     text-transform: none;
     letter-spacing: normal;

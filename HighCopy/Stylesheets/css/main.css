@@ -33,40 +33,55 @@ html, body {
     flex-direction: row;
 }
 
-.z-index-modifier{
+.z-index-modifier {
     z-index: 2;
 }
 
-
-
 @media all and (max-width: 900px) {
 
-    #large_navbar{display: none}
-    #small_navbar{display: none}
-    #static_topbar .logo_picture{display: none}
-    .hamburger-logo{display: inline-flex}
+    #large_navbar {
+        display: none
+    }
+
+    #small_navbar {
+        display: none
+    }
+
+    #static_topbar .logo_picture {
+        display: none
+    }
+
+    .hamburger-logo {
+        display: inline-flex
+    }
 }
+
 @media all and (min-width: 900px) {
 
     /*.firebase_left_nav{display: none}*/
     /*.logo_picture{display: none}*/
-    .hamburger-logo{display: none}
+    .hamburger-logo {
+        display: none
+    }
 }
-.hamburger-logo{
+
+.hamburger-logo {
     margin-top: 11px;
     margin-left: 18px;
     margin-right: 4px;
     color: #b4dcf1;
     /*display: none;*/
 }
-.hamburger-logo:hover{
+
+.hamburger-logo:hover {
     margin-top: 11px;
     margin-left: 18px;
     margin-right: 4px;
     color: #ffffff;
     /*display: none;*/
 }
-.flex-col-container-2{
+
+.flex-col-container-2 {
     /*display: -webkit-flex;*/
     /*display: flex;*/
     -webkit-flex-direction: column;
@@ -81,9 +96,8 @@ html, body {
     width: 100%;
     height: 48px;
     z-index: 3;
-    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .firebase_topbar_floating {
     background-color: #FFFFFF;
@@ -131,9 +145,9 @@ html, body {
 
 .dropdown_div {
     border: solid #e0e0e0;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0 0 1px 0;
     height: auto;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
 }
 
 .first_dropdown_button {
@@ -152,6 +166,7 @@ html, body {
     text-align: center;
 
 }
+
 .first_dropdown_button:hover {
     border: none;
     display: inline-block;
@@ -196,8 +211,6 @@ html, body {
 
 }
 
-
-
 .Go_to_docs {
     font-size: 14px;
     font-weight: 500;
@@ -221,7 +234,7 @@ html, body {
 }
 
 .first_dropdown_button_name {
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 32.5px;
     height: 10px;
     font-stretch: condensed;
@@ -259,7 +272,7 @@ html, body {
 }
 
 .logo_name {
-    padding: 0px;
+    padding: 0;
     margin-top: 5.5px;
     font-size: 22px;
     margin-left: 10px;
@@ -273,7 +286,7 @@ html, body {
 }
 
 .logo_name_floating {
-    padding: 0px;
+    padding: 0;
     margin-top: 5.5px;
     font-size: 22px;
     margin-left: 10px;
@@ -311,14 +324,14 @@ html, body {
     overflow-x: hidden;
     overflow-y: hidden;
 
-    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .firebase_left_nav_collapsed {
     width: 68px;
     color: #757575;
     height: auto;
-    padding:auto;
+    padding: auto;
     /*position: absolute;*/
     /*left: 0px;*/
     /*right: 0px;*/
@@ -326,7 +339,7 @@ html, body {
     overflow-x: hidden;
     overflow-y: hidden;
 
-    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .firebase_body {
@@ -341,7 +354,7 @@ html, body {
 .firebase_dash {
     background-color: #cfd8dc;
     width: 100%;
-    height: 630px;                  /* MANUAL HEIGHT */
+    height: 630px; /* MANUAL HEIGHT */
     /*z-index: -2;*/
     overflow-y: auto;
 }
@@ -354,22 +367,22 @@ html, body {
 
 }
 
-.firebase_dash .overview_bar .help_button{
+.firebase_dash .overview_bar .help_button {
     color: #B0DFF6;
     font-size: 24px;
     margin-top: 16px;
     margin-right: 24px;
     height: auto;
-    width:auto;
+    width: auto;
 }
 
-.firebase_dash .overview_bar .help_button:hover{
+.firebase_dash .overview_bar .help_button:hover {
     color: #FFFFFF;
     font-size: 24px;
     margin-top: 16px;
     margin-right: 24px;
     height: auto;
-    width:auto;
+    width: auto;
 }
 
 .firebase_dash .welcome_card {
@@ -424,11 +437,11 @@ html, body {
 
 }
 
-.firebase_dash .terms-privacy a{
+.firebase_dash .terms-privacy a {
     cursor: pointer;
 }
 
-.firebase_dash .terms-privacy a:hover{
+.firebase_dash .terms-privacy a:hover {
     color: #039BE5;
 }
 
@@ -443,7 +456,6 @@ html, body {
     margin: auto;
     padding: auto;
 }
-
 
 .firebase_dash .dash_card {
     float: left;
@@ -484,8 +496,7 @@ html, body {
 
 .firebase_dash .dash_card .card_footer {
     height: 44px;
-    margin: auto;
-    margin-top: 15px;
+    margin: 15px auto auto;
 }
 
 .firebase_left_nav #scrollable1 {
@@ -603,7 +614,6 @@ html, body {
     border-radius: 3px;
 }
 
-
 .dash_card .upgrade_button {
 
     font-size: 14px;
@@ -623,11 +633,10 @@ html, body {
     outline: none;
 }
 
-.card_footer a{
+.card_footer a {
     padding-left: 20px;
     color: #039be5;
 }
-
 
 .spark .upgrade_button {
     margin-left: 58px;
@@ -658,14 +667,12 @@ html, body {
     outline: none;
 }
 
-
 .firebase_left_nav_collapsed .sidebar_collapse {
     width: 100%;
     height: 44px;
     font-size: 24px;
     padding: 4px 16px 0 25px;
     margin: auto;
-
 
     border: none;
     color: #737373;
@@ -694,13 +701,12 @@ html, body {
 
 }
 
-
 .firebase_left_nav_collapsed .navbar_item {
     height: 36px;
     width: auto;
     background-color: inherit;
     color: inherit;
-    padding: 0px 24px 30px 24px;
+    padding: 0 24px 30px 24px;
     font-size: 14px;
     font-weight: 500;
     vertical-align: middle;
@@ -716,7 +722,7 @@ html, body {
     width: 20px;
     height: 20px;
 
-    font-family: "Material Icons";
+    font-family: "Material Icons", serif;
     font-size: 20px;
     font-weight: normal;
 
@@ -726,7 +732,7 @@ html, body {
     width: 20px;
     height: 20px;
 
-    font-family: "Material Icons";
+    font-family: "Material Icons", serif;
     font-size: 20px;
     font-weight: normal;
 
@@ -736,7 +742,6 @@ html, body {
     background-color: #EEEEEE;
 
 }
-
 
 .firebase_left_nav_collapsed .navbar_item:hover {
     background-color: #EEEEEE;
@@ -775,13 +780,10 @@ html, body {
     text-transform: uppercase;
 }
 
-
 .firebase_left_nav_collapsed .navbar_separator {
     width: auto;
     background-color: inherit;
-    margin: auto;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px auto;
 
     /*padding: 80px 24px 0px 24px;*/
     font-size: 12px;
@@ -803,7 +805,7 @@ html, body {
 }
 
 .material-icons {
-    font-family: 'Material Icons';
+    font-family: 'Material Icons', serif;
     font-weight: normal;
     font-style: normal;
     font-size: 24px; /* Preferred icon size */
@@ -827,8 +829,8 @@ html, body {
     font-feature-settings: 'liga';
 }
 
-.material-icons-2{
-    font-family: 'Material Icons';
+.material-icons-2 {
+    font-family: 'Material Icons', serif;
     font-weight: normal;
     font-style: normal;
     font-size: 24px; /* Preferred icon size */
@@ -852,7 +854,6 @@ html, body {
     font-feature-settings: 'liga';
 }
 
-
 #floating_navbar {
     /*background: rgba(0,0,0,0.4);*/
     /*color: rgba(0,0,0,0.87);*/
@@ -861,7 +862,7 @@ html, body {
 
     /*position: relative;*/
     display: none;
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2);;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);;
     /*box-shadow: 50px 0px 900px rgba(0,0,0,0.8);*/
     position: absolute;
     background-color: #FFFFFF;
@@ -872,7 +873,7 @@ html, body {
     border: none;
 }
 
-#navbar_overlay{
+#navbar_overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
@@ -881,7 +882,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
     z-index: 9;
     cursor: pointer;
 }

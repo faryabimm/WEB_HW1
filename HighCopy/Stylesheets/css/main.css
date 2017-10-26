@@ -569,6 +569,7 @@ html {
     cursor: pointer;
     white-space: nowrap;
     outline: none;
+    border-radius: 3px;
 }
 
 
@@ -579,7 +580,7 @@ html {
     color: #039BE5;
     background-color: inherit;
     text-transform: uppercase;
-    margin: auto auto auto 70px;
+    margin: auto auto auto 87px;
     padding: 8px 12px 2px 12px;
     vertical-align: middle;
     horiz-align: center;
